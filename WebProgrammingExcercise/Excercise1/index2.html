@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            font-family: Arial, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            width: 900px;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+        }
+
+        ul{
+            list-style-type: none;
+            display: flex;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        ul > li{
+            width: 180px;
+            height: 220px;
+            background-color: lightgrey;
+            color: white;
+            border: 1px solid black;
+            margin: 20px;
+            flex-basis: 21%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        #header,#image, #footer {
+            width: 900px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+        }
+
+        #header {
+            height: 120px;
+            background-color: burlywood;
+            margin-bottom: 10px;
+        }
+
+        #image {
+            height: 400px;
+            background-color: lightgrey;
+            margin-bottom: 18px;
+        }
+
+        #titleSvr{
+            margin-bottom: 20px;
+        }
+
+        #footer{
+            height: 120px;
+            background-color: #084298;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h2>Header section</h2>
+        <h3>900px - 120px</h3>
+    </div>
+    <div id="image">
+        <h2>Company Image</h2>
+        <h3>900px - 400px</h3>
+        <p>designed by - gdatamart.com</p>
+    </div>
+    <h2 id="titleSvr">Our Services</h2>
+    <ul>
+        <li>
+            <p>Services</p>
+            <p>width: 180px</p>
+            <p>height: 220px</p>
+        </li>
+        <li><p>Services</p></li>
+        <li><p>Services</p></li>
+        <li><p>Services</p></li>
+        <li><p>Services</p></li>
+        <li><p>Services</p></li>
+    </ul>
+    <div id="footer">
+        <h2>Footer section</h2>
+        <h3>900px 120px</h3>
+    </div>
+</body>
+</html>
