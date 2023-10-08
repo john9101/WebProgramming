@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <img id="rotate-image" src="https://nentang.vn/wp-content/uploads/2018/07/html-css-js-course-intro.jpeg">
+    <script>
+        let currentDegree = 0;
+        $(document).ready(function (){
+            function rotateImage() {
+                currentDegree += 15;
+                $("#rotate-image").css("transform", `rotate(${currentDegree}deg)`);
+                setTimeout(rotateImage, 2000);
+            }
+            rotateImage();
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div>
+    <div id="info-page">
+        <div class="container">
+            <div class="info-section">
+                <div id="account-section">
+                    <span class="title-section">Account</span>
+                    <form id="account-form">
+                        <div class="input-data">
+                            <label for="fullname" class="icon-input"><i class="fa-solid fa-user"></i></label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+                        </div>
+                        <div class="input-data">
+                            <label for="email" class="icon-input"><i class="fa-solid fa-envelope"></i></label>
+                            <input type="email" id="email" name="email" placeholder="Email Address">
+                        </div>
+                        <div class="input-data">
+                            <label for="password" class="icon-input"><i class="fa-solid fa-key"></i></label>
+                            <input type="password" id="password" name="password" placeholder="Password">
+                        </div>
+                    </form>
+                </div>
+                <div id="date_birth-gender-section">
+                    <div id="date_birth" class="date_birth-gender">
+                        <span class="title-section">Date of Birth</span>
+                        <form id="date_birth-form">
+                            <input type="text" class="input-data DMY" placeholder="DD">
+                            <input type="text" class="input-data DMY" placeholder="MM">
+                            <input type="text" class="input-data DMY" placeholder="YYYY">
+                        </form>
+                    </div>
+                    <div id="gender" class="date_birth-gender">
+                        <span class="title-section">Gender</span>
+                        <div id="choose-gender" class="input-data">
+                            <span id="male" class="m_f">Male</span>
+                            <span id="female" class="m_f">Female</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="pagment-section">
+                    <span class="title-section">Payment Details</span>
+                    <div id="payment-dt">
+                        <div id="cdcard_paysal" class="input-data">
+                            <div id="credit_car" class="payment-method">
+                                <i class="fa-brands fa-cc-visa"></i>
+                                <p>Credit Card</p>
+                            </div>
+                            <div id="paysal" class="payment-method">
+                                <i class="fa-brands fa-cc-paypal"></i>
+                                <p>Paysal</p>
+                            </div>
+                        </div>
+
+                        <form id="fill_info-card">
+                            <div class="input-data">
+                                <label for="card-number" class="icon-input"><i
+                                        class="fa-regular fa-credit-card"></i></label>
+                                <input type="text" id="card-number" name="card-number" placeholder="Card Number">
+                            </div>
+
+                            <div id="card-CVC-date_exprired">
+                                <div id="CVC" class="input-data">
+                                    <label for="card-CVC" class="icon-input"><i class="fa-solid fa-user"></i></label>
+                                    <input type="text" id="card-CVC" name="card-CVC" placeholder="Card CVC">
+                                </div>
+
+                                <div id="date-expired">
+                                    <select class="input-data">
+                                        <option>01 Jan</option>
+                                    </select>
+                                    <select class="input-data">
+                                        <option>2015</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="terms_condition-section">
+                    <span class="title-section">Terms and Conditions</span>
+                    <div>
+                        <input type="checkbox" id="cb-accept" name="checkbox-accept">
+                        <label for="cb-accept">I accept the terms and conditions for signing up to this service, and
+                            hereby
+                            comfirm I have read the privacy policy.</label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

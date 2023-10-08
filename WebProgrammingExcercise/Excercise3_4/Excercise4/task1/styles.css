@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+
+}
+
+.color-button {
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px black solid;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+}
+
+#button-container {
+    width: 600px;
+    margin: 50px auto;
+    display: flex;
+    gap: 10px;
+}
+
+.red:hover,.green:hover,.blue:hover,.yellow:hover{
+    color: white;
+}
+
+.red:hover {
+    background-color: red;
+}
+
+.green:hover {
+    background-color: green;
+}
+
+.blue:hover {
+    background-color: blue;
+}
+
+.yellow:hover {
+    background-color: yellow;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Định dạng khung slider */
+        .slider {
+            width: 300px;
+            overflow: hidden;
+        }
+
+        /* Khung chứa các hình ảnh */
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        /* Định dạng cho từng hình ảnh */
+        .slide {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        /* Định dạng nút điều hướng */
+        .slider-nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .slider-nav button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="slider">
+    <div class="slides">
+        <div class="slide">
+            <img src="image1.jpg" alt="Hình ảnh 1">
+        </div>
+        <div class="slide">
+            <img src="image2.jpg" alt="Hình ảnh 2">
+        </div>
+        <div class="slide">
+            <img src="image3.jpg" alt="Hình ảnh 3">
+        </div>
+    </div>
+</div>
+<div class="slider-nav">
+    <button onclick="prevSlide()">&#10094;</button>
+    <button onclick="nextSlide()">&#10095;</button>
+</div>
+</body>

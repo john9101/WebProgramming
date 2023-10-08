@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div id="button-container"></div>
+    <script>
+        $(document).ready(function () {
+            const buttonContainer = $("#button-container");
+            let currentButtonQuality = 1;
+            function createButton(number){
+                const button = $("<button>").text(number).click(function (){
+                    if (parseInt($(this).text()) === currentButtonQuality) {
+                        $(this).css("visibility","hidden");
+                        currentButtonQuality++;
+                    } else {
+                        alert("Nhấn sai!");
+                    }
+                });
+                return button;
+            }
+            for (let i = 1; i <= 64; i++) {
+                buttonContainer.append(createButton(i));
+            }
+        });
+    </script>
+</body>
+</html>

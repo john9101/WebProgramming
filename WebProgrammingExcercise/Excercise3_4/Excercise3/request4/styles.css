@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Arial, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+#info-page{
+    width: 500px;
+    height: 700px;
+    display: grid;
+    background-color: #e1e1e1;
+    padding: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#info-page .container{
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+#info-page .container .info-section{
+    margin: 36px;
+    display: grid;
+    gap: 28px;
+}
+
+#info-page .container .title-section{
+    color: #7ed321;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 18px;
+}
+
+#info-page .container .info-section #account-form{
+    display: grid;
+    gap: 12px;
+}
+
+.input-data{
+    display: flex;
+    background-color: #f9f9f9;
+    border: #e8e8e8 1px solid;
+    border-radius: 3px;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+#info-page .container .info-section #account-form .input-data input,#card-number, #card-CVC{
+    flex: 1;
+    border: unset;
+    background-color: #f9f9f9;
+    margin: 12px;
+}
+
+.icon-input{
+    min-width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #b9b9b9;
+}
+
+.icon-input i{
+    font-size: 12px;
+    width: 100%;
+    padding: 7px;
+    border-right: 1px solid #e8e8e8;
+}
+
+#date_birth-gender-section{
+    display: flex;
+    gap: 12px;
+}
+
+#date_birth-gender-section .date_birth-gender{
+    flex: 1;
+    color: #b9b9b9;
+}
+
+#date_birth-gender-section #date_birth #date_birth-form{
+    display: flex;
+    justify-content: space-between;
+}
+
+#date_birth-gender-section #date_birth #date_birth-form .DMY{
+    width: 62px;
+    text-align: center;
+
+}
+
+#date_birth-form::placeholder{
+    text-align: center;
+    color: #b9b9b9;
+}
+
+#date_birth-gender-section #gender #choose-gender{
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#date_birth-gender-section #gender #choose-gender .m_f{
+    flex: 1;
+}
+
+#date_birth-gender-section #gender #choose-gender #male{
+    border-right: #e8e8e8 2px solid;
+    display: inline-block;
+    height: 100%;
+
+}
+
+#pagment-section #payment-dt{
+    display: grid;
+    gap: 12px;
+}
+
+#pagment-section #cdcard_paysal{
+    display: flex;
+}
+
+#pagment-section #cdcard_paysal #credit_car{
+    background-color: #7ed321;
+    border: 2px solid #63b20b;
+    color: #ffffff;
+}
+#pagment-section #cdcard_paysal #paysal{
+    color: #b9b9b9;
+    border: 1px solid #e8e8e8;
+}
+
+#pagment-section #cdcard_paysal .payment-method{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+#pagment-section #payment-dt #fill_info-card{
+    display: grid;
+    gap: 14px;
+}
+
+#card-CVC-date_exprired{
+    display: flex;
+    gap: 8px;
+}
+
+#CVC, #date-expired{
+    flex: 1;
+}
+
+#date-expired{
+    display: flex;
+}
+
+#date-expired select{
+    flex: 1;
+}

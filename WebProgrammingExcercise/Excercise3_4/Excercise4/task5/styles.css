@@ -1,0 +1,6 @@
+#rotate-image{
+    transition: transform 1s ease-in-out;
+    width: 500px;
+    margin: 100px auto;
+    display: block;
+}
